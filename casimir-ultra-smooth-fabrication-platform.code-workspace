@@ -1,0 +1,43 @@
+{
+	"folders": [
+		{
+			"name": "casimir-ultra-smooth-fabrication-platform (main)",
+			"path": "."
+		},
+		{
+			"name": "warp-bubble-optimizer",
+			"path": "../warp-bubble-optimizer"
+		},
+		{
+			"name": "casimir-nanopositioning-platform",
+			"path": "../casimir-nanopositioning-platform"
+		},
+		{
+			"name": "lqg-anec-framework",
+			"path": "../lqg-anec-framework"
+		},
+		{
+			"name": "negative-energy-generator",
+			"path": "../negative-energy-generator"
+		}
+	],
+	"settings": {
+		"python.defaultInterpreterPath": "C:\\Program Files\\Python313\\python.exe",
+		"files.exclude": {
+			"**/.git": true,
+			"**/node_modules": true,
+			"**/__pycache__": true,
+			"**/.pytest_cache": true,
+			"**/venv": true,
+			"**/.venv": true
+		},
+		"powershell.cwd": "casimir-ultra-smooth-fabrication-platform (main)"
+	},
+	"extensions": {
+		"recommendations": [
+			"ms-python.python",
+			"ms-vscode.cpptools",
+			"james-yu.latex-workshop"
+		]
+	}
+}
