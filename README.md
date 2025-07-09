@@ -1,5 +1,14 @@
 # Casimir Ultra-Smooth Fabrication Platform
 
+## Related Repositories
+
+- [energy](https://github.com/arcticoder/energy): Central meta-repo for all energy, quantum, and Casimir research. This fabrication platform is a core part of the energy ecosystem for device prototyping and integration.
+- [casimir-tunable-permittivity-stacks](https://github.com/arcticoder/casimir-tunable-permittivity-stacks): Uses this platform for fabricating high-precision permittivity stacks.
+- [casimir-nanopositioning-platform](https://github.com/arcticoder/casimir-nanopositioning-platform): Integrates with this fabrication platform for device assembly and alignment.
+- [casimir-anti-stiction-metasurface-coatings](https://github.com/arcticoder/casimir-anti-stiction-metasurface-coatings): Relies on ultra-smooth fabrication for advanced metasurface coatings.
+
+All repositories are part of the [arcticoder](https://github.com/arcticoder) ecosystem and link back to the energy framework for unified documentation and integration.
+
 ## Overview
 
 Revolutionary ultra-smooth nanofabrication platform leveraging quantum vacuum fluctuations for precision manufacturing. This repository implements **quantum-enhanced fabrication technology** with comprehensive uncertainty quantification, real-time quality control, and full commercial manufacturing deployment capability.
