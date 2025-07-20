@@ -101,3 +101,5 @@ dmypy.json
 
 # Progress log file
 update-progress.txt
+
+.github/instructions/copilot-instructions.md
