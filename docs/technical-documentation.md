@@ -2,54 +2,37 @@
 
 ## Executive Summary
 
-The Casimir Ultra-Smooth Fabrication Platform represents a revolutionary breakthrough in precision nanofabrication technology, leveraging quantum vacuum fluctuations and advanced multi-physics modeling for ultra-smooth surface manufacturing. This system integrates quantum coherence positioning, interferometric measurement, and comprehensive uncertainty quantification to achieve sub-nanometer fabrication precision with real-time quality control and manufacturing deployment capabilities.
+This document provides technical descriptions of research-stage work on an ultra-smooth fabrication platform that explores Casimir-related effects and precision process control. The contents include theoretical formulations, modeling results, and validation scripts; many numeric claims are derived from lab experiments or simulations and are presented with caveats and links to validation artifacts where available.
 
 **Key Specifications:**
-- Surface fabrication precision: <0.2 nm dimensional tolerance
-- Surface roughness: 0.05 nm RMS
-- Quantum positioning accuracy: 0.062 nm with 89% stability
-- Interferometric sensitivity: 1.66 fm/√Hz
-- Manufacturing readiness: 90.4% with full-scale deployment approval
-- UQ capabilities: 100% critical concern resolution with 95% confidence intervals
-- Real-time monitoring: 95% process coverage with 92% defect detection
 
 ## 1. Theoretical Foundation
 
 ### 1.1 Quantum-Enhanced Fabrication Physics
 
-The ultra-smooth fabrication platform exploits quantum vacuum fluctuations for precision surface control through enhanced Casimir force modeling. The fundamental fabrication force includes quantum coherence effects:
+The platform discusses formulations that incorporate Casimir-like forces and coherence effects as part of a multi-physics model. The equations shown are research hypotheses and modeling constructs intended to inform experiments. Their applicability to production settings requires validation and peer review.
 
 ```
 F_fabrication = -(π²ℏc)/(240d⁴) [1 + δ_coherence + δ_surface + δ_quantum + δ_thermal]
 ```
 
 Where:
-- d is the surface separation during fabrication
-- δ_coherence accounts for quantum coherence positioning effects
-- δ_surface includes ultra-smooth surface corrections
-- δ_quantum represents advanced polymer quantization
-- δ_thermal incorporates thermal correlation management
 
 ### 1.2 Enhanced Surface Control Formulation
 
 #### Quantum Coherence Positioning
-The quantum coherence correction for positioning follows:
-
 ```
 δ_coherence = (ψ_coherent|Ĥ_interaction|ψ_coherent) × exp(-Γ_decoherence × t)
 ```
 
 Where ψ_coherent represents the quantum coherence state and Γ_decoherence is the decoherence rate.
-
+The sections that describe commercial production capabilities and market estimates are included for planning and discussion. They summarize internal model outputs and should not be interpreted as commitments or approvals for manufacturing deployment. Any commercial or procurement decision should be based on independent verification, due diligence, and formal certification processes.
 #### Ultra-Smooth Surface Modeling
 For ultra-smooth fabrication, surface roughness effects are captured by:
 
-```
+This documentation presents research-stage results and model outputs intended to support reproducibility and discussion. While reported metrics and validation artifacts are provided where available, many claims remain preliminary and should be validated independently. The repository includes validators, data artifacts, and scripts to support replication and review.
 δ_surface = Σ_n A_n × sin(2πx/λ_n + φ_n) × exp(-σ_roughness²k_n²/2)
 ```
-
-Where A_n are surface amplitude coefficients and σ_roughness is the target RMS roughness.
-
 #### Advanced Polymer Quantization
 Enhanced polymer quantization provides superior control:
 
