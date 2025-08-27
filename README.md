@@ -1,47 +1,37 @@
-# Casimir Ultra-Smooth Fabrication Platform
+
+# Casimir Ultra-Smooth Fabrication Platform (Research)
 
 ## Related Repositories
 
-- [energy](https://github.com/arcticoder/energy): Central meta-repo for all energy, quantum, and Casimir research. This repository is part of an ecosystem of research projects and is presented here as a research artifact.
-- [casimir-tunable-permittivity-stacks](https://github.com/arcticoder/casimir-tunable-permittivity-stacks): Uses components from this project for fabrication experiments.
-- [casimir-nanopositioning-platform](https://github.com/arcticoder/casimir-nanopositioning-platform): Integrates with positioning subsystems developed alongside this project.
-- [casimir-anti-stiction-metasurface-coatings](https://github.com/arcticoder/casimir-anti-stiction-metasurface-coatings): Relies on ultra-smooth fabrication techniques explored in this work.
+- `energy`: Central hub for reproducibility artifacts and cross-repo references.
+- `casimir-tunable-permittivity-stacks`: Uses components from this project for fabrication experiments.
+- `casimir-nanopositioning-platform`: Integrates with positioning subsystems developed alongside this project.
+- `casimir-anti-stiction-metasurface-coatings`: Materials work that benefits from ultra-smooth fabrication methods.
 
-This repository documents research-stage work exploring ultra-smooth nanofabrication techniques. The content includes experimental and modeling results, validation scripts, and uncertainty-quantification (UQ) artifacts where available. Many claims are presented as preliminary findings and may require further validation or independent replication.
+This repository documents research-stage exploration of ultra-smooth nanofabrication techniques. It contains experimental notes, modeling code, validation scripts, and UQ artifacts where available. Findings should be treated as preliminary research outputs and validated independently prior to operational use.
 
 ## Overview
 
-This project explores how Casimir-related effects and precision process control could contribute to improved surface finish and positioning performance in laboratory settings. Reported metrics are linked to validation artifacts when available; users and reviewers should consult the associated `src/uq_validation/` scripts and documentation in `docs/` for measurement conditions, raw data, and uncertainty bounds.
+The project investigates whether Casimir-related effects and precision process control can influence surface finish and positioning performance in lab-scale experiments. Reported metrics are linked to validation artifacts where available; reviewers should consult `src/uq_validation/` and `docs/` for measurement conditions, raw data, and uncertainty quantification.
 
-## Research-Stage Performance Claims and Validation
+## Research-Stage Results and Validation (summary)
 
-The sections below summarize experimental and model-derived results reported by the project. Where possible, numbers link to validation artifacts in `docs/` or scripts under `src/uq_validation/`. These are research-stage results and should be interpreted in the context of the documentation and methods provided.
-
-### Summary of Reported UQ Work
-
-- The project includes validation scripts under `src/uq_validation/` intended to exercise subsystems and produce reproducible outputs. Inspect those scripts and their outputs (CSV/plots) to see how reported metrics were derived.
-- Some reported metrics derive from internal test harnesses and simulations; external independent verification and additional sensitivity analysis are recommended before using these values for commercial decisions.
-
-### Notable Reported Results (Conservative Framing)
-
-- The project reports improvements in synchronization and thermal behavior in lab setups and simulations; reported numeric results are available in the referenced validation artifacts. These results are promising but should be interpreted as experimental or model-derived rather than production guarantees.
-- Reported measurement values are accompanied by artifacts in `src/uq_validation/` and `docs/` in many cases; check those artifacts for raw data, methodology, and uncertainty bounds.
+- The repository includes validation scripts under `src/uq_validation/` designed to reproduce selected experiments and generate diagnostic artifacts (CSV/plots). Re-run those scripts with the provided inputs to verify reported metrics.
+- Some reported metrics originate from internal test harnesses and simulations; independent verification and additional sensitivity analyses are recommended before using these numbers for design or procurement.
 
 ## Intended Audience and Use
 
-This repository is intended for researchers, collaborators, and reviewers interested in experimental methods, modeling approaches, and reproducibility artifacts related to ultra-smooth fabrication research. It is not a commercial product specification. Any operational or business decisions should be based on independent verification and formal due diligence.
+This repository is intended for researchers and collaborators exploring fabrication methods and reproducibility practices. It is not a specification for commercial products. Operational decisions should rely on independent verification and formal testing.
 
 ## Scope, Validation & Limitations
 
-- Scope: The repository documents exploratory research and prototype implementations. Benchmarks and measurements are provided for transparency where available but were often obtained in controlled lab or simulation conditions.
-- Validation: Validation scripts and result artifacts are located under `src/uq_validation/` and in `docs/`. Reviewers should run the validators and inspect raw data and logs to confirm reported metrics.
-- Limitations: Reported metrics may depend on laboratory conditions, simulation assumptions, and specific measurement equipment. Independent replication and additional sensitivity analyses are recommended before relying on these metrics for design or procurement decisions.
+- **Scope:** Research and prototype implementations; benchmarks are produced under controlled lab or simulated conditions.
+- **Validation:** Result artifacts and validators live under `src/uq_validation/` and `docs/`. Inspect raw logs, seed values, and environment metadata when reproducing results.
+- **Limitations:** Reported metrics depend on laboratory setup, measurement equipment, and simulation assumptions. Additional stress-testing and longer-term studies are needed before generalizing results.
 
-If you are a maintainer or reviewer and need help locating validation artifacts or running the UQ scripts, please open an issue or contact the maintainers listed in `CONTRIBUTING.md`.
+If you need help locating validation artifacts or running validators, open an issue or contact maintainers via `CONTRIBUTING.md`.
 
-## Quick Start (Research Validation)
-
-### Install dependencies
+## Quick Start (research validation)
 
 ```bash
 # Clone the repository
@@ -52,10 +42,10 @@ cd casimir-ultra-smooth-fabrication-platform
 pip install -r requirements.txt
 ```
 
-### Run UQ validation scripts (examples)
+### Run example validators
 
 ```bash
-# Run the complete validator when available
+# Run the complete validator (if present)
 python src/uq_validation/complete_uq_resolution_validator.py
 
 # Run individual validators
@@ -81,3 +71,7 @@ casimir-ultra-smooth-fabrication-platform/
 ├── requirements.txt
 └── README.md
 ```
+
+---
+
+This repository contains research-stage artifacts. Numeric summaries and experimental claims are provisional and should be reproduced with the provided validation inputs and scripts prior to being used beyond documented test configurations.
